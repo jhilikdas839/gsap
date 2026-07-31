@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+}
+
+
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: #ff3c3c;
+  border-radius: 10px;
+  transition:background-color 0.9s ease-in-out , scale 0.9s ease-out ;
+  transition: transform 0.9s ease-in-out ;
+   transform-origin:top left  ;
+  transition: transform 0.9s ease-in-out
+}
+
+
+.box:hover{
+    background-color: #0535c4;
+    scale:1.2 ;
+     transform: rotate(20deg) ;
+
+
+} 
