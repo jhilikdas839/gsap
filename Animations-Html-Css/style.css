@@ -7,10 +7,11 @@
 html, body{
     height: 100%;
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-color: #1e1e1e;
+    padding: 20px;
 }
 
 
@@ -19,17 +20,48 @@ html, body{
   height: 200px;
   background-color: #ff3c3c;
   border-radius: 10px;
-  transition:background-color 0.9s ease-in-out , scale 0.9s ease-out ;
+  /* transition:background-color 0.9s ease-in-out , scale 0.9s ease-out ;
   transition: transform 0.9s ease-in-out ;
    transform-origin:top left  ;
-  transition: transform 0.9s ease-in-out
+  transition: transform 0.9s ease-in-out */
+
+
+  animation: animate 5s linear infinite 2s;
+
+ 
 }
 
 
-.box:hover{
+/* .box:hover{
     background-color: #0535c4;
     scale:1.2 ;
      transform: rotate(20deg) ;
 
 
-} 
+}  */
+
+
+@keyframes animate{
+    0%{
+        baground-color: #ff3c3c;
+        transform:translateX(0px)
+    }
+
+    20%{
+        background-color: #0535c4;
+        transform:translateX(100px)
+    }
+
+
+       40%{
+        background-color: #05c41f;
+        transform:translateX(200px)
+    }
+
+
+      100%{
+        background-color: #e98a05;
+        transform:translateX(500px)
+    }
+
+}
