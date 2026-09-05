@@ -49,13 +49,13 @@ gsap.from(".box", {
 
 gsap.fromTo(".box", {
     y: 100,
-    opacity:0
+    opacity: 0
 
 },
     {
-        y:0,
-        opacity:1,
-         delay: 0.1,
+        y: 0,
+        opacity: 1,
+        delay: 0.1,
         duration: 1,
         ease: "power3.out",
         stagger: {
@@ -65,9 +65,28 @@ gsap.fromTo(".box", {
 
 
 
-       }
+    }
 
 
-    
+
 
 )
+
+
+gsap.from(".wrap", {
+    y: 200,
+    opacity:0,
+    stagger: {
+        each: 0.4,
+        from: "start",
+        grid: "auto"
+    }
+})
+
+
+gsap.to(".wrap", {
+    y: 0,
+   
+    
+})
+
