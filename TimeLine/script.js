@@ -22,7 +22,12 @@ tl.to(".box1",{
     x:1000,
     duration:1.5,
     ease:"power3.out"
+},"jhilik").to(".box6" ,{
+    x:1000,
+    duration:1.5,
+    ease:"power3.out"
 },"jhilik")
+
 
 
 setTimeout(() => {
